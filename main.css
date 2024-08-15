@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=Montserrat:wght@500&family=Playfair+Display:wght@500&family=Raleway&family=Roboto:wght@400;500&display=swap');
+/*The .cs file that contains the styles for the html files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*The body of the page*/
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+/*The entire upper section that holds the basic information*/
+.upper-section-container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+}
+/*the telephone logo edits*/
+.telephone-logo{
+    z-index: 4;
+
+    width: 16px;
+    margin-right: -27%;
+
+}
+/*The address text info since it wasn't centered*/
+.address-info{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
+
+}
+/*the location logo*/
+.location-logo{
+    position: absolute;
+    margin-left: 34%;
+
+    width: 16px;
+    z-index: 2;
+}
+/*the mail logo*/
+.email-logo{
+    position: absolute;
+    z-index: 3;
+
+    width: 23px;
+    margin-left: 62%;
+    
+}
+/*this is the start of the navigation bar*/
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29A7FF;
+    padding: 10px 20px ;
+
+
+}
+/*container for the navigation stuff*/
+.nav-container{
+    height: -20px;
+    width: 100%;
+    display: flex;
+    padding: -10px;
+}
+/*order of the little section the navigation menu*/
+.nav-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-left: 26%;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #29A7FF;
+}
+/*the main 2nd ave dental logo*/
+.main-logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    align-items: center;
+    margin-top: 0.3%;
+    margin-left: 2%;
+    z-index: 7;
+
+}
+/*the little section the navigation menu*/
+.nav-item{
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px ;
+    border-radius: 10px;
+}
+/*to edit the hover effect of the nav items*/
+.nav-item:hover{
+    background-color:#5CBCFF ;
+    
+}
+/*the button that clicks for appointment*/
+.nav-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color:ghostwhite;
+    color: black;
+    margin-left: 2%;
+}
+/*to edit the hovering effect*/
+.nav-button:hover{
+    background-color:#5CBCFF ;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*The slide show image 1*/
+.slideshow-image_1{
+    max-height: 625px;
+    min-width: 100vw;
+    object-fit: cover;
+    background-image: url('resources/Slideshow_1.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    margin-left: -27%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+/*The slide show image 1*/
+.slideshow-image_2{
+    max-height: 625px;
+    min-width: 100vw;
+    object-fit: cover;
+    background-image: url('resources/Slideshow_2.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    margin-left: -27%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+/*The slide show image 1*/
+.slideshow-image_3{
+    max-height: 625px;
+    min-width: 100vw;
+    object-fit: cover;
+    background-image: url('resources/Slideshow_3.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    margin-left:-27% ;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*The slide show image colour overlay*/
+.overlay{
+    position: absolute;
+    min-height: 625px;
+    min-width: 100vw;
+    background-image:linear-gradient(#29A7FF, white );
+    opacity: 0.7;
+    z-index: 30;
+    margin-left: -27%;
+
+}
+/*This is the huge title text*/
+.text-overlay {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 7%;
+    color: floralwhite;
+    font-size: 60px;
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    margin-left: -21%;
+    text-align: left;
+    z-index: 31; /* Ensures text is above the slides */
+}
+/*this is the next text*/
+.text-overlay-2{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25%;
+    color: floralwhite;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    margin-left: -21%;
+    text-align: left;
+    z-index: 31;
+
+}
+/*the second button*/
+.nav-button-2{
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    color: black;
+    margin-bottom: 15%;
+    margin-left: -21%;
+    z-index: 31;
+
+}
+/*the second button hover*/
+.nav-button-2:hover{
+    background-color:#5CBCFF ;
+}
+
+/*The card container*/
+.other-info-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 34;
+}
+/*the image settings*/ 
+.image{
+    margin-left: 43%;
+    width: 70px;
+    height: 70px;
+    padding-bottom: 10px;
+}
+/*the box title heading*/
+.box-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+/*The box paragraph*/
+.box-paragraph{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+}
+
+/*the boxes*/
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:#29A7FF;
+    opacity: 0.7;
+    margin: 5px;
+    border-radius: 18px;
+    padding: 10px;
+    padding-bottom: 100px;
+    z-index: 34;
+    width: 375px;
+    height: 385px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*the hover effect on the boxes*/
+.box:hover {
+    transform: translateY(-15px);
+}
+/*the button on the box*/
+.box-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color:ghostwhite;
+    color: black;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: 11%;
+    
+}
+
+/*change coloru for box button*/
+.box-button:hover{
+    background-color:#5CBCFF ;
+}
+
+/*the middle text*/
+.middle-text-seperator{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 3px grey;
+
+}
+
+/*the middle text*/
+.text-seperator{
+    justify-content: center;
+}
+
+
+/*the footer flexbox*/
+.footer-container{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    background-color: #29A7FF;
+    height: 275px; 
+    display: flex;
+}
+/*the footer logo*/
+.logo-footer{
+    padding-top: 20px;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    padding-left: 60px;
+
+
+}
+
+/*the footer logo and paragraph*/
+.footer-logo-things{
+    display: flex;
+    flex-direction: column;
+}
+
+/*the left footer flexbox*/
+.left-footer{
+    padding-top: 20px;
+    padding-left: 60px;
+    line-height: 2.0;
+    flex-direction: column;
+}
+
+/*the center footer flexbox*/
+.center-footer{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;;
+    line-height: 2.1;
+    padding-left: 130px;
+    font-size:  15px;
+}
+
+/*the right footer flexbox*/
+.right-footer{
+    flex-direction: column;
+    padding-top: 20px;
+    display: flex;
+    line-height: 2.1;
+    justify-content: right;
+    padding-left: 160px;
+}
+
+/*the center footer info*/
+.footer-section-info{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*the links flexbox*/
+.relink-footer{
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ---------------------------------The Contact Page --------------------------------*/
+
+/*The contact page container*/
+.contact-container{  
+    position: absolute;   
+    width: 100%;
+    margin-top: 10%;
+    background: white;
+    border-radius: 12px;
+    padding:20px 60px 30px 40px ;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    z-index: 40;
+    height: 450px;
+}
+/*The contact box entirety of it*/
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*the left side of the box*/
+.left-box{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 15px;
+    position: relative;
+}
+/*the middle bar*/
+.left-box::before{
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #29A7FF; /* This can remain grey or change to #29A7FF if you want */
+}
+
+/*the address flex*/
+.box-address, .box-phone, .box-email{
+    font-family: 'Roboto', sans-serif;
+    margin: 14px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+/*the heading in all of the files*/
+.box-heading, .box-heading-2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: -2%;
+    line-height: 27px;
+}
+
+/*the address image*/
+.address-box-image{
+    z-index: 4;
+
+    width: 16px;
+    margin-left: -6% ;
+}
+
+/*the phone image*/
+.telephone-box-image{
+    z-index: 4;
+
+    width: 16px;
+    margin-left: -6% ;
+}
+
+/*the phone image*/
+.email-box-image{
+    z-index: 4;
+
+    width: 23px;
+}
+/*the right side of the boz*/
+.right-box{
+    width: 75%;
+    margin-left: 75px;
+}
+
+/*the right side header*/
+.right-header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/*the right side paragraph*/
+.right-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/*the form input stuff*/
+.form-input{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.form-input input{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 12px;
+    padding: 0 15px;
+    resize: none;  
+}
+
+.form-input textarea{
+    font-family:'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 12px;
+    padding: 0 15px;
+    resize: none;  
+    min-height: 110px;
+}
+
+/*the input button layout*/
+.input-button{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background:#29A7FF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-left:20px ;
+    padding-right: 20px;
+    margin-top: 15%;
+}
+
+/*the hover of the input button*/
+.input-button:hover{
+    background:#5CBCFF; /* Updated color */
+}
+
+/*the image behin*/
+.slideshow-image_5{
+    max-height: 625px;
+    min-width: 100vw;
+    object-fit: cover;
+    background-image: url('resources/Slideshow_4.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    margin-left: -27%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ---------------------------------Appointment Page--------------------------------*/
+
+/*The appointment page container*/
+.appointment-container{  
+    position: absolute;   
+    width: 100%;
+    margin-top: 10%;
+    background: white;
+    border-radius: 12px;
+    padding:20px 60px 30px 40px ;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    z-index: 40;
+    height: 550px;
+    top: 250px;
+}
+/*The appointment box entirety of it*/
+.appointment-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/*the background image*/
+.slideshow-image_6{
+    max-height: 625px;
+    min-width: 100vw;
+    object-fit: cover;
+    background-image: url('resources/Slideshow_6.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    margin-left: -27%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*the form input stuff*/
+.form-input-appointment{
+    font-family:'Roboto', sans-serif;
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+    margin-bottom: 15%;
+}
+/*the individual input boxes*/
+.form-input-appointment input{
+    height: 100%;
+    width: 110%;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 12px;
+    padding: 0 15px;
+    resize: none;
+    margin-top: 10px;
+}
+/*the text area of input boxes*/
+.form-input-appointment textarea{
+    font-family:'Roboto', sans-serif;
+    height: 100%;
+    width: 110%;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 12px;
+    padding: 0 15px;
+    resize: none;  
+    min-height: 110px;
+    margin-top: 10px;
+}
+/*the choose options input box*/
+.form-input-options{
+    font-family:'Roboto', sans-serif;
+    height: 35px;
+    width: 110%;
+    margin: 12px 0;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 12px;
+    padding: 0 15px;
+    resize: none; 
+    height: 40px; 
+}
+
+/*the left appointment box*/
+.appointment-left-box{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+/*the right side of the box*/
+.appointment-right-box{
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+    padding-top: 7.5%;
+}
+
+/*the appointment input button*/
+.appointment-input-button{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background:#29A7FF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-left:20px ;
+    padding-right: 20px;
+    margin-top: 25%;
+
+}
+
+/*the hover of the input button*/
+.appointment-input-button:hover{
+    background:#5CBCFF; /* Updated color */
+}
+
+/*the header over the image*/
+.appointment-right-header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    top: -10%;
+}
+
+/* The first text overlay */
+.appointment-text-overlay{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 7%;
+    color: floralwhite;
+    font-size: 60px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 31;
+}
+
+/*the right side paragraph*/
+.appointment-right-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.5%;
+    margin-bottom: -5% ;
+}
+
+/*the cards reused for appointment page*/
+.other-info-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 34;
+
+}
+
+/*the middle text*/
+.appointment-middle-text-seperator{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 3px grey;
+
+}
+
+/*the middle text*/
+.appointment-text-seperator{
+    justify-content: center;
+}
+
+/* ---------------------------------Services Page--------------------------------*/
+
+/*the picture on the website*/
+.slideshow-image-services{
+    max-height: 625px;
+    min-width: 100vw;
+    object-fit: cover;
+    background-image: url('resources/services_slideshow.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    padding-top: 10%;
+    margin-left: -27%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/*the little square info boxes flex container*/
+.service-other-info-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 34;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: -15%;
+}
+
+/*the little square info boxes flex container*/
+.service-other-info-container-bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 34;
+    position: absolute;
+    margin-top: 85%;
+    margin-left: -15%;
+}
+
+
+/*the image settings*/ 
+.service-image{
+    margin-left: 38%;
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+/*the box title heading*/
+.service-box-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    padding-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+/*The box paragraph*/
+.service-box-paragraph{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15%;
+    justify-content: center;
+    text-align: center;
+}
+
+/*the actual boxes*/
+.service-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #29A7FF;
+    opacity: 1;
+    margin: 5px;
+    border-radius: 18px;
+    padding: 10px;
+    padding-bottom: 100px;
+    z-index: 34;
+    width: 330px;
+    height: 380px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 5%;
+}
+
+/*the hover effect on the boxes*/
+.service-box:hover {
+    transform: translateY(-15px);
+}
+/*the button on the box*/
+.service-box-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color:ghostwhite;
+    color: black;
+    width: 250px;
+    margin-top: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+/*change coloru for box button*/
+.service-box-button:hover{
+    background-color:#5CBCFF ;
+}
+
+/*the footer flexbox*/
+.service-footer-container{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 46%;
+    background-color: #29A7FF;
+    height: 275px; 
+    display: flex;
+}
+
+/* ---------------------------------About Page--------------------------------*/
+/*the picture on the website*/
+.slideshow-image-about{
+    max-height: 625px;
+    min-width: 100vw;
+    object-fit: cover;
+    background-image: url('resources/about-us.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+    padding-top: 10%;
+    margin-left: -27%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/*the container of information*/
+.about-container{
+    position: absolute;   
+    justify-self: center;
+    width: 120%;
+    margin-top: 10%;
+    background: white;
+    border-radius: 12px;
+    padding:20px 60px 30px 40px ;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    z-index: 40;
+    height: 750px;
+    top: 250px;
+    margin-left: -10%;
+}
+
+/*the right side paragraph*/
+.about-right-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 1.5%;
+    margin-bottom: -5%;
+}
+
+/*the header over the image*/
+.about-right-header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    top: -10%;
+}
+
+/*the right side paragraph*/
+.about-right-paragraph-2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 1.5%;
+    margin-bottom: -15%;
+}
+
+/*the header over the image*/
+.about-right-header-2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 10%;
+}
+
+/*The card container*/
+.about-info-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 34;
+}
+/*the cards inside about*/
+.about-box{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #29A7FF;
+    margin: 5px;
+    margin-top: 105%;
+    border-radius: 18px;
+    padding: 10px;
+    padding-bottom: 100px;
+    z-index: 45;
+    width: 375px;
+    height: 385px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: -8%;
+}
+/*the second box*/
+.about-box-2{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #29A7FF;
+    margin-left: 31%;
+    margin-top: 105%;
+    border-radius: 18px;
+    padding: 10px;
+    padding-bottom: 100px;
+    z-index: 45;
+    width: 375px;
+    height: 385px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*the second box*/
+.about-box-3{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #29A7FF;
+    margin-left: 70%;
+    margin-top: 105%;
+    border-radius: 18px;
+    padding: 10px;
+    padding-bottom: 100px;
+    z-index: 45;
+    width: 375px;
+    height: 385px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*the footer*/
+.about-footer-container{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    background-color: #29A7FF;
+    height: 275px; 
+    display: flex;
+    margin-top: 60%;
+}
